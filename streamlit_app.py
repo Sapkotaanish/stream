@@ -263,6 +263,9 @@ st.write(
     """
 )
 
+st.write(st.context.headers)
+st.write(os.environ)
+
 st.info(
     """
     Need a feature that's not on here?
