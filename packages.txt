@@ -1,2 +1,2 @@
 procps
-htop | ls
+ssh
