@@ -1,2 +1,1 @@
-procps
-ssh
+wget
