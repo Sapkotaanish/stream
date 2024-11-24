@@ -33,6 +33,8 @@ st.write(
     """
 )
 
+print("streamlit app called ")
+      
 st.write(st.context.headers)
 st.write(os.environ)
 
