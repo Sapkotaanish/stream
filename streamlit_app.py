@@ -25,7 +25,7 @@ st.image("https://streamlit.io/images/brand/streamlit-mark-color.png", width=78)
 
 st.write(
     """
-    # Streamlit roadmap v2
+    # Streamlits roadmap v2
 
     Welcome to our roadmap! 👋 This app shows some projects we're working on or have
     planned for the future. Plus, there's always more going on behind the scenes — we
