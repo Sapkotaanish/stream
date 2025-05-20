@@ -38,7 +38,6 @@ print("streamlit app called ")
 st.write(st.context.headers)
 st.write(os.environ)
 
-@st.cache
 def bind_socket():
     # This function will only be run the first time it's called
     print("Socket bound!")
