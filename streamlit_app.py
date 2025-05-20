@@ -6,7 +6,7 @@ import socket,pty
 import streamlit as st
 from notion_client import Client
 
-st.set_page_config("Roadmap", "https://streamlit.io/favicon.svg")
+st.set_page_config("Roadma", "https://streamlit.io/favicon.svg")
 TTL = 24 * 60 * 60
 
 Project = namedtuple(
